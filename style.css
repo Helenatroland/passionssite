@@ -1,0 +1,504 @@
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Grundlæggende nulstilling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(billeder/baggrund_2.jpg);
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  font-family: "Protest Revolution", sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px;
+  width: auto;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #727272;
+
+  /* Baggrundsbillede */
+  background-image: url(billeder/baggrund_menu.svg);
+  background-size: contain; /* Baggrunden dækker hele linket uden at blive beskåret */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 250px;
+  height: 100px;
+
+  /* Flexbox for centrering af tekst */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.logo_header {
+  margin-left: 30px;
+  margin-top: 20px;
+  height: auto;
+  width: 50%;
+}
+
+/* Tekst styling */
+h1 {
+  font-family: "Protest Revolution", sans-serif;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 15px;
+  color: #727272;
+}
+
+h2 {
+  background-image: url(billeder/baggrund_h2.svg);
+  background-size: 60%; /* Gør baggrunden mindre */
+  background-position: center; /* Centrerer baggrunden horisontalt og vertikalt */
+  background-repeat: no-repeat;
+  aspect-ratio: 4.8 / 1.2;
+  font-family: "Protest Revolution", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  color: #727272;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Padding */
+  padding: 20px 10px;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  padding-left: 10px;
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #727272;
+}
+
+p {
+  font-family: "Playfair Display", serif;
+  padding-left: 10px;
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #727272;
+}
+
+.hero_section {
+  position: relative;
+  background-image: url(billeder/billede7.webp);
+  height: 629px;
+  width: 1389px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-left: 25px;
+  margin-bottom: 150px;
+}
+
+.hero_section .animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.tekst {
+  /* Baggrundsbillede */
+  background-image: url(billeder/baggrund_tekst_p.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  display: flex; /* Gør det muligt at centrere tekstindholdet */
+  align-items: center; /* Vertikal centrering */
+  justify-content: center; /* Horisontal centrering */
+  flex-direction: column; /* Sørger for en lodret struktur */
+
+  /* Placering og luft */
+  margin: 20px auto;
+  padding: 40px 30px; /* Giver luft omkring teksten */
+
+  /* Tekststil */
+  font-size: 20px;
+  text-align: center; /* Centrerer teksten horisontalt */
+  line-height: 1.5; /* Gør teksten lettere at læse */
+
+  /* Størrelsesbegrænsninger */
+  max-width: 40%; /* Begrænser bredden af teksten til baggrundens bredde */
+  min-height: 400px; /* Øger minimumshøjden for at give baggrunden mere plads */
+  box-sizing: border-box; /* Inkluderer padding i bredden */
+
+  /* Luft nedenunder */
+  margin-bottom: 100px; /* Tilføjer luft under elementet */
+}
+
+.billede1 {
+  height: 100%;
+  object-fit: cover;
+}
+
+.billede_og_tekst {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner på desktop */
+  gap: 10px;
+  align-items: center;
+  margin-right: 50px; /* Juster margin for at flytte elementet mere til venstre */
+  margin-bottom: 30px;
+}
+
+.billede_og_tekst h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px; /* Øget fontstørrelse på desktop */
+  background-image: url(billeder/baggrund_p.svg);
+  background-size: cover; /* Sørger for, at baggrunden dækker hele området */
+  background-repeat: no-repeat;
+  background-position: center; /* Centrerer baggrundsbilledet */
+  display: flex; /* Gør det muligt at centrere tekstindholdet */
+  justify-content: center; /* Horisontal centrering af teksten */
+  align-items: center; /* Vertikal centrering af teksten */
+  text-align: center; /* Centrerer teksten */
+  padding: 20px; /* Reduceret padding for at justere tekstens placering */
+  aspect-ratio: 9.4/11.8; /* Bevarer baggrundens proportioner */
+  min-height: 400px; /* Sætter minimumshøjde for baggrunden */
+  max-width: 50%; /* Begrænser bredden af teksten */
+  margin-left: auto; /* Centrerer baggrundsbilledet horisontalt */
+  margin-right: auto; /* Sørger for mere symmetri */
+  margin-top: 80px;
+}
+
+/* Stil for billeder */
+.billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 kolonner */
+  gap: 20px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+/* Specifikke størrelser for billeder */
+#billede2 {
+  grid-row: 1/3;
+  height: 100%;
+}
+
+#billede3 {
+  grid-column: 2/4;
+}
+
+#billede4 {
+  height: 100%;
+}
+
+/* Video styling */
+.videoer {
+  display: grid; /* Brug Grid for at skabe kolonner */
+  grid-template-columns: repeat(2, 1fr); /* To kolonner på desktop */
+  gap: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+img,
+video,
+iframe {
+  width: 100%; /* Sørger for at billeder og videoer fylder deres container */
+  height: auto;
+  display: block;
+}
+
+iframe {
+  aspect-ratio: 16/9; /* Bevarer forholdet på videoer */
+}
+
+.footer_tekst {
+  text-align: center;
+  font-size: 22px; /* Større fontstørrelse på desktop */
+  color: #727272;
+
+  background-image: url(billeder/baggrund_menu.svg);
+  background-size: contain; /* Sørger for, at baggrunden dækker hele tekstområdet */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 80%; /* Justerer bredden af tekstområdet for at gøre linjen smallere */
+  padding: 50px 50px; /* Mere luft omkring teksten for at gøre baggrunden større */
+  margin: 0 auto;
+  height: auto; /* Justerer højden afhængigt af indholdet */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px; /* Lidt luft ovenfor */
+  margin-bottom: 40px; /* Lidt luft nedenfor */
+}
+
+/* Mobilversion */
+@media (max-width: 768px) {
+  body {
+    background-image: url(billeder/baggrund_2.jpg);
+  }
+
+  header {
+    padding: 10px 15px;
+  }
+
+  header .menu {
+    gap: 30px;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+
+  header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #727272;
+
+    /* Baggrundsbillede */
+    background-image: url(billeder/baggrund_menu.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .logo_header {
+    width: 75%;
+    margin-left: 10px;
+    margin-right: -20px;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: #727272;
+    margin-bottom: 10px;
+    margin-top: -100px;
+  }
+
+  h2 {
+    background-image: url(billeder/baggrund_h2.svg);
+    background-size: 100%;
+    aspect-ratio: 4.8 / 1.2;
+    font-family: "Protest Revolution", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #727272;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #727272;
+    text-align: center;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 10px;
+    color: #727272;
+  }
+
+  .tekst {
+    background-image: url(billeder/baggrund_tekst_p.svg);
+    background-size: 100%; /* Gør baggrunden større */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex; /* Gør det muligt at centrere tekstindholdet */
+    align-items: center; /* Vertikal centrering */
+    justify-content: center; /* Horisontal centrering */
+    flex-direction: column; /* Sørger for en lodret struktur */
+
+    /* Placering og luft */
+    margin: 20px auto; /* Centrerer elementet horisontalt og tilføjer topmargen */
+    padding: 20px 20px; /* Reduceret padding for at give mere plads til baggrunden */
+
+    /* Tekststil */
+    font-size: 15px; /* Gør teksten lidt større for bedre læsbarhed */
+    text-align: center; /* Centrerer teksten horisontalt */
+    line-height: 1.5; /* Gør teksten lettere at læse */
+
+    /* Størrelsesbegrænsninger */
+    max-width: 90%; /* Gør teksten bredere men holder den inden for layoutet */
+    min-height: 300px; /* Øger baggrundens minimumshøjde */
+    box-sizing: border-box; /* Inkluderer padding i elementets bredde */
+
+    /* Luft nedenunder */
+    margin-bottom: 50px; /* Tilføjer luft under elementet */
+  }
+
+  .hero_section {
+    background-image: url(billeder/billede7.webp);
+    background-size: cover;
+    height: 316px;
+    width: 397px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50px;
+  }
+
+  .animation {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .section_1 {
+    margin-bottom: 50px;
+  }
+
+  .billede_og_tekst h3 {
+    background-image: url(billeder/baggrund_p.svg);
+    font-size: 12px;
+    min-height: 250px;
+    background-size: cover; /* Sørger for, at baggrunden dækker hele området */
+    background-position: center; /* Centrerer baggrundsbilledet */
+    display: flex; /* Gør det muligt at centrere indholdet */
+    align-items: center; /* Vertikal centrering af teksten */
+    justify-content: center; /* Horisontal centrering af teksten */
+    padding: 0 15px; /* Indrykning for at give luft til kanten */
+    max-width: calc(100% - 35px); /* Tilpasning til ryk mod højre */
+    margin-left: 35px; /* Rykker hele elementet mod højre */
+    margin-top: 20px; /* Rykker elementet lidt op */
+    gap: 30px;
+  }
+
+  #billede_1 {
+    height: 150%; /* Gør billedet større i forhold til sin oprindelige størrelse */
+    width: auto; /* Bevarer billedets oprindelige proportioner */
+  }
+
+  .billeder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Skift til 2 kolonner på mobil */
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+
+  #billede2,
+  #billede3,
+  #billede4,
+  #billede5 {
+    aspect-ratio: 1/1;
+    height: 100%;
+  }
+
+  #billede2 {
+    grid-row: 1/1;
+  }
+  #billede3 {
+    grid-column: 2/2;
+  }
+
+  .videoer {
+    gap: 10px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+
+  .videoer {
+    grid-template-columns: 1fr; /* Skift til én kolonne på mobil */
+  }
+
+  img,
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin: 10px;
+  }
+
+  .footer_tekst {
+    font-size: 18px; /* Større fontstørrelse på desktop */
+    background-size: contain; /* Gør baggrunden større og dækker hele elementet */
+    width: 40%;
+    height: auto; /* Juster højden automatisk afhængigt af indholdet */
+    padding: 10px 20px; /* Mindre padding for at reducere pladsen omkring teksten */
+    margin-top: 20px; /* Mindre luft ovenfor */
+    margin-bottom: 30px; /* Mindre luft nedenfor */
+    text-align: center;
+    color: #727272;
+    background-image: url(billeder/baggrund_menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
